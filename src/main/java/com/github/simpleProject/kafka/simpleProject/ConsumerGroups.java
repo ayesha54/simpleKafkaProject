@@ -13,11 +13,11 @@ import java.time.Duration;
 import java.util.Arrays;
 import java.util.Properties;
 
-public class Consumer {
+public class ConsumerGroups {
     public static void main(String[] args){
-        Logger logger = LoggerFactory.getLogger(Consumer.class.getName());
+        Logger logger = LoggerFactory.getLogger(ConsumerGroups.class.getName());
         String bootstrapServers = "127.0.0.1:9092";
-        String groupId = "my-fourth-application";
+        String groupId = "my-first-application";
         Properties properties = new Properties();
         properties.setProperty(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,bootstrapServers);
         properties.setProperty(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
